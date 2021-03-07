@@ -22,7 +22,7 @@
         <input id="textinput3" type="text" value="HUB"> <br><br>
         <input id="num1" type="text" value="123"> <br><br>
         <input id="num2" type="text" value="456"> <br><br>
-        <input id="num2" type="text" value="789"> <br><br>
+        <input id="num3" type="text" value="789"> <br><br>
         <button onclick="getSKU()">Click me</button><br><br>
 
         <input id="output" type="text" value="">
@@ -31,10 +31,20 @@
 
     </div>
 
+    <script>
+        function getSKU() {
+            var firstValue = document.getElementById('textinput1').value.substring(0, 2);
+            var secondValue = document.getElementById('textinput2').value.substring(0, 2);
+            var thirdValue = document.getElementById('textinput3').value.substring(0, 2);
+            var num1 = document.getElementById('num1').value.substring(0, 2);
+            var num2 = document.getElementById('num2').value.substring(0, 2);
+            var num3 = document.getElementById('num3').value.substring(0, 2);
+            var sku = firstValue + secondValue + thirdValue + num1 + num2 + num3;
+            var sku1 = sku.toUpperCase();
+            document.getElementById('output').value = sku1;
 
-
-
-    <script></script>
+        }
+    </script>
 </body>
 
 </html>
