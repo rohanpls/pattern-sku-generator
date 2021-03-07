@@ -42,7 +42,10 @@
             var sku = firstValue + secondValue + thirdValue + num1 + num2 + num3;
             var sku1 = sku.toUpperCase();
             document.getElementById('output').value = sku1;
-
+            var cpyclipboard = document.getElementById("output");
+            cpyclipboard.select();
+            document.execCommand("copy");
+            document.getElementById('copymsg').innerHTML = "Copied!"
         }
     </script>
 </body>
