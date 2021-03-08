@@ -7,7 +7,7 @@
     <meta name="description" content="SKU/Pattern Generator">
     <meta name="author" content="rohanpls">
     <style>
-        * {
+    * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -15,8 +15,8 @@
         }
         
         body {
-            color: white;
             font-weight: 400;
+            text-align: center;
         }
         
         #container {
@@ -30,22 +30,62 @@
             height: 100%;
             overflow: hidden;
         }
+        
+        #sub-container {
+            width: 400px;
+            margin: auto;
+            padding: 8% 0 0;
+        }
+        
+        #form {
+            background: #FFFFFF;
+            margin: 0 auto 100px;
+            padding: 45px;
+            position: relative;
+            z-index: 1;
+            max-width: 400px;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25), 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+        }
+        
+        #form input {
+            background: #ebebeb;
+            width: 100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        
+        #form button {
+            text-transform: uppercase;
+            background: #409ade;
+            color: #FFFFFF;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
     </style>
 </head>
 
 <body>
     <div id="container">
-        <div id="form">
-            <input id="textinput1" type="text" value="GIT"> <br><br>
-            <input id="textinput2" type="text" value="HUB"> <br><br>
-            <input id="textinput3" type="text" value="PRO"> <br><br>
-            <input id="num1" type="text" value="123"> <br><br>
-            <input id="num2" type="text" value="456"> <br><br>
-            <input id="num3" type="text" value="789"> <br><br>
-            <button onclick="getSKU()">Click me</button><br><br>
+        <div id="sub-container">
+            <div id="form">
+                <input id="textinput1" type="text" value="GIT"> <br><br>
+                <input id="textinput2" type="text" value="HUB"> <br><br>
+                <input id="textinput3" type="text" value="PRO"> <br><br>
+                <input id="num1" type="text" value="123"> <br><br>
+                <input id="num2" type="text" value="456"> <br><br>
+                <input id="num3" type="text" value="789"> <br><br>
+                <button onclick="getSKU()">Click me</button><br><br>
 
-            <input id="output" type="text" value="">
-            <p id="copymsg"></p>
+                <input id="output" type="text" value="">
+                <p id="copymsg"></p>
+            </div>
         </div>
     </div>
 
