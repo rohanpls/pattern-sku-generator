@@ -7,23 +7,46 @@
     <meta name="description" content="SKU/Pattern Generator">
     <meta name="author" content="rohanpls">
     <style>
-
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+        }
+        
+        body {
+            color: white;
+            font-weight: 400;
+        }
+        
+        #container {
+            background: rgb(5, 109, 187);
+            background: linear-gradient(0deg, rgba(5, 109, 187, 1) 0%, rgba(0, 164, 204, 1) 100%);
+            background: -o-linear-gradient(0deg, rgba(5, 109, 187, 1) 0%, rgba(0, 164, 204, 1) 100%);
+            background: -moz-linear-gradient(0deg, rgba(5, 109, 187, 1) 0%, rgba(0, 164, 204, 1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(5, 109, 187, 1) 0%, rgba(0, 164, 204, 1) 100%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
     </style>
 </head>
 
 <body>
-    <div>
-        <input id="textinput1" type="text" value="GIT"> <br><br>
-        <input id="textinput2" type="text" value="HUB"> <br><br>
-        <input id="textinput3" type="text" value="PRO"> <br><br>
-        <input id="num1" type="text" value="123"> <br><br>
-        <input id="num2" type="text" value="456"> <br><br>
-        <input id="num3" type="text" value="789"> <br><br>
-        <button onclick="getSKU()">Click me</button><br><br>
+    <div id="container">
+        <div id="form">
+            <input id="textinput1" type="text" value="GIT"> <br><br>
+            <input id="textinput2" type="text" value="HUB"> <br><br>
+            <input id="textinput3" type="text" value="PRO"> <br><br>
+            <input id="num1" type="text" value="123"> <br><br>
+            <input id="num2" type="text" value="456"> <br><br>
+            <input id="num3" type="text" value="789"> <br><br>
+            <button onclick="getSKU()">Click me</button><br><br>
 
-        <input id="output" type="text" value="">
-        <p id="copymsg"></p>
-
+            <input id="output" type="text" value="">
+            <p id="copymsg"></p>
+        </div>
     </div>
 
     <script>
